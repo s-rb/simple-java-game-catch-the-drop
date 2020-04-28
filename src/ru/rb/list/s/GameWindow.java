@@ -17,7 +17,7 @@ public class GameWindow extends JFrame {
     // Переменные для движения капли
     private static float dropLeft = 200; // Коорд.Х левого верхнего угла
     private static float dropTop = -100; // Коорд.Y левого верхнего угла
-    private static float dropVelocity = 150; // Скорость капли
+    private static float dropVelocity = 100; // Скорость капли
     private static int score = 0; // Набранные очки
 
     public static void main(String[] args) throws IOException {
@@ -44,7 +44,7 @@ public class GameWindow extends JFrame {
                     dropTop = -100; // Если каплю нажали, выводим ее за границу окна
                     dropLeft = (int) (Math.random() * (gameField.getWidth() - drop.getWidth(null))); // Переводим каплю по x в случайное место в границах окна
                     // увеличиваем скорость
-                    dropVelocity += 10;
+                    dropVelocity += 7;
                     score++;
                     gameWindow.setTitle("Score: " + score); // Выводим очки в загаловке окна
                 }
