@@ -11,4 +11,4 @@ Very simple Java game - "Catch the Drop" from GeekBrains intensive using Swing
 **Main features:**
 - The speed of falling increases.
 - Points are counted (in the window title).
--The drop appears at a random position on the X axis.
+- The drop appears at a random position on the X axis.
